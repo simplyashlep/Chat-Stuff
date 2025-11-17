@@ -1,0 +1,412 @@
+%!TEX program = xelatex
+% ===================================================================
+% OREGON CIRCUIT COURT COMPLAINT - MASTER TEMPLATE
+% Employment Discrimination - Penn v. Central City Concern
+% ===================================================================
+\documentclass[12pt,letterpaper]{article}
+
+% ===================================================================
+% PACKAGE IMPORTS - Essential packages for professional legal document
+% ===================================================================
+\usepackage[letterpaper,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tocloft}
+\usepackage{xcolor}
+
+% ===================================================================
+% FONT CONFIGURATION - Professional legal document appearance
+% ===================================================================
+\setmainfont{Times New Roman}
+\setstretch{2.0}  % Double-spacing for body text
+
+% ===================================================================
+% PARAGRAPH AND NUMBERING CONFIGURATION
+% ===================================================================
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{0pt}
+
+% Automatic paragraph numbering
+\newcounter{legalpara}
+\setcounter{legalpara}{0}
+\newcommand{\para}{%
+  \refstepcounter{legalpara}%
+  \noindent\makebox[0.5in][l]{\textbf{\arabic{legalpara}.}}\ignorespaces%
+}
+
+% ===================================================================
+% SECTION FORMATTING - Roman numerals for major sections
+% ===================================================================
+\titleformat{\section}
+  {\normalfont\large\bfseries\centering}
+  {\Roman{section}.}
+  {0.5em}
+  {\MakeUppercase}
+  
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}
+  {\Alph{subsection}.}
+  {0.5em}
+  {}
+
+% ===================================================================
+% HEADER/FOOTER CONFIGURATION
+% ===================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{\small COMPLAINT FOR DAMAGES\\Page \thepage\ of \pageref{LastPage}}
+
+% ===================================================================
+% CITATION COMMANDS - Blue Book compliant
+% ===================================================================
+\newcommand{\statute}[1]{\textit{#1}}
+\newcommand{\case}[1]{\textit{#1}}
+\newcommand{\regs}[1]{\textit{#1}}
+
+% ===================================================================
+% DOCUMENT BEGINS
+% ===================================================================
+\begin{document}
+
+% Remove page number from first page
+\thispagestyle{empty}
+
+% ===================================================================
+% CAPTION - Oregon Circuit Court Format
+% ===================================================================
+\begin{center}
+\begin{singlespace}
+{\large \textbf{IN THE CIRCUIT COURT OF THE STATE OF OREGON}}\\[0.5em]
+{\large \textbf{FOR THE COUNTY OF MULTNOMAH}}\\[2em]
+
+\begin{tabular}{@{}p{3in}l@{}}
+ASHLE' ANTOINETTE PENN, & \\
+& \\
+\hspace{1em} Plaintiff, & Case No. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+& \\
+v. & \textbf{COMPLAINT} \\
+& \\
+CENTRAL CITY CONCERN, & \\
+an Oregon nonprofit corporation, & \\
+& \\
+\hspace{1em} Defendant. & Jury Trial Demanded \\
+\end{tabular}
+\end{singlespace}
+\end{center}
+
+\vspace{2em}
+
+% ===================================================================
+% BEGIN DOUBLE-SPACED BODY
+% ===================================================================
+
+\setstretch{2.0}
+
+% ===================================================================
+% I. INTRODUCTION / NATURE OF ACTION
+% ===================================================================
+\section{NATURE OF ACTION}
+
+\para Plaintiff Ashle' Antoinette Penn brings this employment discrimination action against Defendant Central City Concern for violations of Oregon Revised Statutes Chapter 659A, including unlawful retaliation, interference with protected leave rights, failure to accommodate disability, and constructive discharge following Plaintiff's exercise of protected rights under Oregon employment laws.
+
+\para This Court has jurisdiction over this matter pursuant to ORS 659A.885, which grants exclusive original jurisdiction to Oregon circuit courts for civil actions alleging violations of ORS 659A.001 to 659A.665.
+
+% ===================================================================
+% II. PARTIES
+% ===================================================================
+\section{PARTIES}
+
+\para Plaintiff Ashle' Antoinette Penn (hereinafter ``Plaintiff'' or ``Ms. Penn'') is an individual residing in Multnomah County, Oregon.
+
+\para Defendant Central City Concern (hereinafter ``Defendant'' or ``CCC'') is an Oregon nonprofit corporation with its principal place of business located at 232 NW Sixth Avenue, Portland, Oregon 97209.
+
+\para At all times relevant to this Complaint, Defendant was Plaintiff's employer within the meaning of ORS 659A.001(6) and employed more than six employees, thereby subjecting it to the prohibitions against discrimination and retaliation under ORS Chapter 659A.
+
+% ===================================================================
+% III. JURISDICTION AND VENUE
+% ===================================================================
+\section{JURISDICTION AND VENUE}
+
+\para This Court has subject matter jurisdiction over Plaintiff's claims pursuant to ORS 659A.885, which vests exclusive original jurisdiction in Oregon circuit courts for civil actions alleging violations of ORS 659A.001 to 659A.665.
+
+\para Venue is proper in Multnomah County pursuant to ORS 14.080 because Defendant's principal place of business is located in Multnomah County and the acts and omissions giving rise to Plaintiff's claims occurred in Multnomah County.
+
+\para Plaintiff timely filed a complaint with the Oregon Bureau of Labor and Industries (``BOLI'') on or about May 5, 2025.
+
+\para On or about August 18, 2025, BOLI issued Plaintiff a Final Order Dismissing Complaint without a hearing and a Notice of Right to File a Civil Action.
+
+\para This Complaint is filed within 90 days of Plaintiff's receipt of the BOLI Notice of Right to File a Civil Action, satisfying the jurisdictional prerequisites of ORS 659A.820.
+
+% ===================================================================
+% IV. STATEMENT OF FACTS
+% ===================================================================
+\section{STATEMENT OF FACTS}
+
+\subsection{Employment and Protected Disclosures}
+
+\para Plaintiff was employed by Defendant as a Senior Recruitment Specialist from approximately May 2023 through July 2024.
+
+\para In her role, Plaintiff was responsible for recruiting candidates for positions within Defendant's organization and worked closely with hiring managers across multiple departments.
+
+\para On or about December 27, 2023, Plaintiff engaged in good faith with management regarding her performance and was provided a ``Coaching for Understanding'' document demonstrating her commitment to meet Defendant's expectations and improve any identified performance concerns.
+
+\para Prior to taking protected leave, Plaintiff made protected disclosures to Defendant's management regarding workplace concerns, including but not limited to concerns about compensation practices and treatment of job applicants with disabilities.
+
+\subsection{Protected Leave and Fabricated Performance Allegations}
+
+\para On or about January 8, 2024, Plaintiff notified Lincoln Financial Group, Defendant's leave administrator, of her need to take a leave of absence due to her own serious health condition.
+
+\para Plaintiff's leave was approved to begin on or about January 18, 2024, and Plaintiff commenced approved protected leave under the Oregon Family Leave Act (OFLA) and Oregon's Paid Leave law.
+
+\para \textbf{On February 8, 2024, while Plaintiff was on approved protected leave and had no duty to work or attend meetings, Defendant issued performance documentation to Plaintiff alleging performance deficiencies and mandating that she report to the office five days per week upon her return.}
+
+\para At the time of the February 8, 2024 performance documentation, Plaintiff had been on continuous approved leave since mid-to-late January 2024 and had no obligation to attend work, participate in meetings, or complete work assignments.
+
+\para Defendant's own leave administrator records confirm that Plaintiff was on approved protected leave throughout the period from January 18-24, 2024 through March 15, 2024.
+
+\para Despite Plaintiff being on approved leave with no duty to work, Defendant documented alleged ``performance failures'' including claims that Plaintiff missed meetings and failed to complete assigned work during the leave period.
+
+\para Defendant's allegation that Plaintiff had ``ongoing performance issues'' and a ``consistent pattern of missing meetings'' during this period is factually impossible because Plaintiff was on approved leave and had no duty to attend any meetings or perform any work.
+
+\para The fabrication of performance allegations during Plaintiff's approved protected leave period demonstrates that Defendant's stated justifications for adverse employment actions were pretextual and that the true motivation was retaliation for Plaintiff's exercise of protected rights.
+
+\para On April 2, 2024, Lincoln Financial Group notified Plaintiff that her Oregon Family Leave Act leave was approved from February 8, 2024 to March 15, 2024.
+
+\subsection{Denial of Reinstatement and Accommodation Failures}
+
+\para On or about March 15, 2024, Plaintiff attempted to return to work from her approved protected leave.
+
+\para Upon seeking to return to work, Defendant's Leave Specialist, Mary Lawson, informed Plaintiff that she would not be permitted to return to work without first completing reasonable accommodation paperwork, despite the fact that Plaintiff had worked in a hybrid remote capacity prior to her leave without any accommodation request.
+
+\para Between March 15, 2024 and April 22, 2024---a period of 38 days---Defendant unlawfully delayed Plaintiff's reinstatement to her position following protected leave.
+
+\para During this delay period, on or about March 18, 2024, Defendant refused to allow Plaintiff to return to work pending completion of accommodation paperwork.
+
+\para On April 1, 2024, Plaintiff returned to the workplace; however, her direct supervisor and team members ignored her and refused to engage with her professionally.
+
+\para On the same day, April 1, 2024, Mary Lawson threatened Plaintiff with termination unless she provided accommodation forms by the end of the business day.
+
+\para On April 8, 2024, Mary Lawson insisted that Plaintiff formally apply for a reasonable accommodation to work from home, despite this work arrangement having been a regular aspect of Plaintiff's position and one that other employees in similar positions enjoyed without accommodation requests.
+
+\para On or about April 11, 2024, Mary Lawson and Michelle Scott, HRBP, conducted a ``fact-finding'' call with Plaintiff regarding her accommodation needs during which they exacerbated the symptoms of Plaintiff's disability and abruptly terminated the call.
+
+\para Following this call, on April 11, 2024, Michelle Scott sent Plaintiff an email conditioning Plaintiff's work-from-home accommodation on a demand that Plaintiff ``must improve my performance''---thereby explicitly linking the accommodation to the fabricated performance record created during Plaintiff's protected leave period.
+
+\para Plaintiff was not permitted to return to work with her approved accommodation until April 22, 2024, resulting in a total delay of 38 days from her March 15, 2024 leave end date.
+
+\subsection{Hostile Work Environment and Constructive Discharge}
+
+\para Upon Plaintiff's eventual return to work on or about April 22, 2024, Defendant subjected Plaintiff to a hostile and retaliatory work environment.
+
+\para Sarah Holland, Senior Director of Supportive Housing, instructed supportive housing managers collectively not to work with Plaintiff, thereby sabotaging Plaintiff's ability to perform her essential job functions as a recruiter.
+
+\para This orchestrated boycott by Defendant's management made it impossible for Plaintiff to succeed in her role, as recruiting for supportive housing positions required collaboration with supportive housing managers.
+
+\para Defendant's creation of an impossible working situation---where Plaintiff was denied access to the hiring managers necessary to perform her duties---was a continuation of the retaliation that began with the fabricated performance record created during her protected leave.
+
+\para The working conditions became so intolerable that a reasonable person in Plaintiff's position would have felt compelled to resign.
+
+\para As a result of Defendant's unlawful conduct, Plaintiff was constructively discharged from her employment in or around July 2024.
+
+% ===================================================================
+% V. FIRST CLAIM FOR RELIEF
+% ===================================================================
+\section*{FIRST CLAIM FOR RELIEF}
+\addcontentsline{toc}{section}{FIRST CLAIM FOR RELIEF}
+\centerline{\textbf{Unlawful Retaliation for Exercise of Protected Leave Rights}}
+\centerline{\textbf{(ORS 659A.183, ORS 659A.186)}}
+
+\para Plaintiff realleges and incorporates by reference each and every allegation contained in paragraphs 1 through [XX] as though fully set forth herein.
+
+\para Plaintiff engaged in protected activity under ORS 659A.186 by exercising her rights to take OFLA-protected leave for her own serious health condition.
+
+\para Defendant was aware of Plaintiff's exercise of protected leave rights.
+
+\para Following Plaintiff's exercise of protected leave rights, Defendant subjected Plaintiff to materially adverse employment actions, including but not limited to:
+\begin{itemize}[leftmargin=1in, itemsep=0pt]
+\item Fabricating performance deficiencies that allegedly occurred while Plaintiff was on approved leave with no duty to work;
+\item Delaying Plaintiff's reinstatement to her position for 38 days following the conclusion of her protected leave;
+\item Conditioning Plaintiff's return to work and accommodation on manufactured performance improvement demands;
+\item Orchestrating a workplace boycott by instructing managers not to work with Plaintiff; and
+\item Creating intolerable working conditions that constructively discharged Plaintiff from employment.
+\end{itemize}
+
+\para The temporal proximity between Plaintiff's exercise of protected leave rights and the adverse actions, combined with the fabrication of performance issues during the leave period itself, demonstrates that Defendant's stated reasons for its actions were pretextual and that retaliation was the true motive.
+
+\para A reasonable employee would be dissuaded from exercising protected leave rights if she knew the employer would fabricate performance issues during the leave period and use those fabricated issues as justification for adverse employment actions.
+
+\para Defendant's conduct violates ORS 659A.186, which prohibits employers from discriminating or retaliating against employees for exercising rights under ORS 659A.150 to 659A.186.
+
+\para As a direct and proximate result of Defendant's unlawful retaliation, Plaintiff has suffered and continues to suffer economic damages including lost wages, lost benefits, and diminished earning capacity, the full amount of which will be proven at trial but is believed to exceed \$500,000.
+
+\para As a direct and proximate result of Defendant's unlawful retaliation, Plaintiff has suffered and continues to suffer noneconomic damages including emotional distress, humiliation, loss of reputation, and other compensable harm, the full amount of which will be proven at trial.
+
+% ===================================================================
+% SECOND CLAIM FOR RELIEF
+% ===================================================================
+\section*{SECOND CLAIM FOR RELIEF}
+\addcontentsline{toc}{section}{SECOND CLAIM FOR RELIEF}
+\centerline{\textbf{Unlawful Interference with Protected Leave Rights}}
+\centerline{\textbf{(ORS 659A.186)}}
+
+\para Plaintiff realleges and incorporates by reference each and every allegation contained in paragraphs 1 through [XX] as though fully set forth herein.
+
+\para ORS 659A.186 prohibits employers from interfering with, restraining, or denying the exercise of or the attempt to exercise any right protected under ORS 659A.150 to 659A.186.
+
+\para Plaintiff exercised her protected right to take family leave under ORS 659A.156.
+
+\para Defendant interfered with Plaintiff's exercise of protected leave rights by:
+\begin{itemize}[leftmargin=1in, itemsep=0pt]
+\item Creating a false performance record based on alleged failures that occurred during approved protected leave when Plaintiff had no duty to work;
+\item Delaying Plaintiff's reinstatement to her position for 38 days following the conclusion of protected leave;
+\item Conditioning Plaintiff's return to work on completion of accommodation paperwork despite no such requirement existing prior to her leave;
+\item Threatening Plaintiff with termination for taking protected leave; and
+\item Creating a hostile work environment upon Plaintiff's return designed to punish her for exercising leave rights.
+\end{itemize}
+
+\para Defendant's fabrication of performance issues during Plaintiff's approved leave period, followed by use of those fabricated issues to justify adverse actions, constituted interference with Plaintiff's exercise of protected leave rights because it deterred Plaintiff and would deter other employees from taking protected leave in the future.
+
+\para As a direct and proximate result of Defendant's unlawful interference with protected leave rights, Plaintiff has suffered and continues to suffer economic damages including lost wages, lost benefits, and diminished earning capacity, the full amount of which will be proven at trial but is believed to exceed \$500,000.
+
+\para As a direct and proximate result of Defendant's unlawful interference, Plaintiff has suffered and continues to suffer noneconomic damages including emotional distress, humiliation, loss of reputation, and other compensable harm, the full amount of which will be proven at trial.
+
+% ===================================================================
+% THIRD CLAIM FOR RELIEF
+% ===================================================================
+\section*{THIRD CLAIM FOR RELIEF}
+\addcontentsline{toc}{section}{THIRD CLAIM FOR RELIEF}
+\centerline{\textbf{Failure to Reinstate Following Protected Leave}}
+\centerline{\textbf{(ORS 659A.162, ORS 659A.186)}}
+
+\para Plaintiff realleges and incorporates by reference each and every allegation contained in paragraphs 1 through [XX] as though fully set forth herein.
+
+\para ORS 659A.162(1) requires that an employee who takes family leave shall, upon the expiration of the leave, be restored to the position held by the employee when the leave commenced or to an equivalent position with equivalent employment benefits, pay, and other terms and conditions of employment.
+
+\para Plaintiff's approved protected leave concluded on or about March 15, 2024.
+
+\para Upon the conclusion of her leave, Defendant failed to restore Plaintiff to her position for 38 days, until April 22, 2024.
+
+\para During this 38-day period, Defendant imposed new and unlawful conditions on Plaintiff's return to work, including demands for accommodation paperwork that had not been required prior to her leave and threatened termination if paperwork was not completed immediately.
+
+\para Defendant's delay in reinstating Plaintiff and imposition of new conditions on her employment violated ORS 659A.162's mandate that employees be restored to their positions upon the expiration of protected leave.
+
+\para As a direct and proximate result of Defendant's failure to reinstate Plaintiff in a timely manner, Plaintiff has suffered and continues to suffer economic damages including lost wages, lost benefits, and diminished earning capacity, the full amount of which will be proven at trial but is believed to exceed \$500,000.
+
+\para As a direct and proximate result of Defendant's failure to reinstate, Plaintiff has suffered and continues to suffer noneconomic damages including emotional distress, humiliation, loss of reputation, and other compensable harm, the full amount of which will be proven at trial.
+
+% ===================================================================
+% FOURTH CLAIM FOR RELIEF
+% ===================================================================
+\section*{FOURTH CLAIM FOR RELIEF}
+\addcontentsline{toc}{section}{FOURTH CLAIM FOR RELIEF}
+\centerline{\textbf{Disability Discrimination - Failure to Accommodate}}
+\centerline{\textbf{(ORS 659A.112, ORS 659A.106)}}
+
+\para Plaintiff realleges and incorporates by reference each and every allegation contained in paragraphs 1 through [XX] as though fully set forth herein.
+
+\para At all relevant times, Plaintiff had a disability within the meaning of ORS 659A.104.
+
+\para Defendant had knowledge of Plaintiff's disability.
+
+\para Plaintiff requested reasonable accommodation to enable her to perform the essential functions of her position, specifically requesting the ability to continue the work-from-home arrangement that had been in place prior to her protected leave.
+
+\para The requested accommodation was reasonable, would not have imposed an undue hardship on Defendant, and would have enabled Plaintiff to perform the essential functions of her position.
+
+\para Defendant failed to engage in a good faith interactive process with Plaintiff regarding her accommodation request and instead:
+\begin{itemize}[leftmargin=1in, itemsep=0pt]
+\item Delayed consideration of Plaintiff's accommodation request for 38 days;
+\item Conditioned any accommodation on Plaintiff's acceptance of fabricated performance improvement demands;
+\item Conducted a hostile ``fact-finding'' call that exacerbated Plaintiff's disability symptoms; and
+\item Created a work environment designed to make continued employment impossible.
+\end{itemize}
+
+\para Defendant's failure to provide reasonable accommodation and its failure to engage in the interactive process in good faith violated ORS 659A.112 and ORS 659A.106.
+
+\para As a direct and proximate result of Defendant's failure to accommodate, Plaintiff has suffered and continues to suffer economic damages including lost wages, lost benefits, and diminished earning capacity, the full amount of which will be proven at trial but is believed to exceed \$500,000.
+
+\para As a direct and proximate result of Defendant's failure to accommodate, Plaintiff has suffered and continues to suffer noneconomic damages including emotional distress, humiliation, loss of reputation, and other compensable harm, the full amount of which will be proven at trial.
+
+% ===================================================================
+% FIFTH CLAIM FOR RELIEF
+% ===================================================================
+\section*{FIFTH CLAIM FOR RELIEF}
+\addcontentsline{toc}{section}{FIFTH CLAIM FOR RELIEF}
+\centerline{\textbf{Constructive Discharge}}
+\centerline{\textbf{(ORS 659A.030, ORS 659A.082, ORS 659A.112)}}
+
+\para Plaintiff realleges and incorporates by reference each and every allegation contained in paragraphs 1 through [XX] as though fully set forth herein.
+
+\para Defendant intentionally created working conditions so intolerable and discriminatory that a reasonable person in Plaintiff's position would have felt compelled to resign.
+
+\para Defendant's creation of intolerable conditions included:
+\begin{itemize}[leftmargin=1in, itemsep=0pt]
+\item Fabricating performance deficiencies that allegedly occurred while Plaintiff was on protected leave;
+\item Orchestrating a workplace boycott by instructing managers not to work with Plaintiff;
+\item Making it impossible for Plaintiff to perform her essential job functions by denying her access to necessary colleagues;
+\item Subjecting Plaintiff to a 38-day delay in reinstatement following protected leave;
+\item Conditioning Plaintiff's accommodation and return to work on acceptance of false performance improvement demands; and
+\item Creating a hostile work environment designed to force Plaintiff's resignation.
+\end{itemize}
+
+\para A reasonable person in Plaintiff's position, facing fabricated performance allegations, systematic workplace exclusion, and denial of necessary working conditions, would have found continued employment intolerable.
+
+\para As a direct and proximate result of being constructively discharged, Plaintiff has suffered and continues to suffer economic damages including lost wages, lost benefits, and diminished earning capacity, the full amount of which will be proven at trial but is believed to exceed \$500,000.
+
+\para As a direct and proximate result of being constructively discharged, Plaintiff has suffered and continues to suffer noneconomic damages including emotional distress, humiliation, loss of reputation, and other compensable harm, the full amount of which will be proven at trial.
+
+% ===================================================================
+% VI. PRAYER FOR RELIEF
+% ===================================================================
+\section{PRAYER FOR RELIEF}
+
+WHEREFORE, Plaintiff Ashle' Antoinette Penn respectfully requests that this Court enter judgment in her favor and against Defendant Central City Concern as follows:
+
+\begin{enumerate}[label=\arabic*.,leftmargin=1in]
+\item Economic damages including lost wages, lost benefits, and diminished earning capacity in an amount to be proven at trial but believed to exceed \$500,000;
+
+\item Noneconomic damages including emotional distress, humiliation, and other compensable harm in an amount to be proven at trial;
+
+\item Pre-judgment and post-judgment interest at the rate allowed by law;
+
+\item Reasonable attorney fees and costs pursuant to ORS 659A.885;
+
+\item Such other and further relief as the Court deems just and proper.
+\end{enumerate}
+
+% ===================================================================
+% JURY DEMAND
+% ===================================================================
+\section{JURY DEMAND}
+
+Plaintiff demands a trial by jury on all issues so triable.
+
+\vspace{2em}
+
+\begin{FlushRight}
+DATED this \_\_\_\_ day of November, 2025.
+
+\vspace{3em}
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Michelle Scott, OSB \#XXXXXX\\
+[Law Firm Name]\\
+[Address]\\
+[City, State ZIP]\\
+Phone: [XXX-XXX-XXXX]\\
+Email: [attorney email]
+
+\textit{Attorney for Plaintiff}
+\end{FlushRight}
+
+\label{LastPage}
+
+\end{document}
